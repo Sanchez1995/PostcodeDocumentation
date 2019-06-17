@@ -1,7 +1,5 @@
 package com.spartaglobal;
 
-import java.util.Map;
-
 public class App
 {
     public static void main( String[] args )
@@ -27,20 +25,16 @@ public class App
         System.out.println(postcodeDeserialiser.postcodesMapped.getResult().get("parish"));
         System.out.println(postcodeDeserialiser.postcodesMapped.getResult().get("admin_ward"));
 
-
+        System.out.println("---------------------");
         System.out.println(postcodeDeserialiser.postcodesMapped.getAdmin_district());
         System.out.println(postcodeDeserialiser.postcodesMapped.getAdmin_county());
+        System.out.println("method overload on admin_ward");
         System.out.println(postcodeDeserialiser.postcodesMapped.getAdmin_ward());
+        System.out.println(postcodeDeserialiser.postcodesMapped.getAdmin_ward(postcodeDeserialiser.postcodesMapped.getResult()));
         System.out.println(postcodeDeserialiser.postcodesMapped.getParish());
         System.out.println(postcodeDeserialiser.postcodesMapped.getParliamentary_constituency());
         System.out.println(postcodeDeserialiser.postcodesMapped.getCcg());
         System.out.println(postcodeDeserialiser.postcodesMapped.getCed());
         System.out.println(postcodeDeserialiser.postcodesMapped.getNuts());
-
-
-
-
-
-
     }
 }

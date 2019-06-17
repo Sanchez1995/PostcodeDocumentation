@@ -119,9 +119,15 @@ public class PostcodeDTO {
     }
 
     public String getAdmin_ward() {
-        admin_ward = (String) getCodes().get("admin_ward");
+        admin_ward = (String) getResult().get("admin_ward");
         return admin_ward;
     }
+    public String getAdmin_ward(Map admin){
+        admin = getCodes();
+        admin_ward = (String) admin.get("admin_ward");
+        return admin_ward;
+    }
+
     public String getParish() {
         parish = (String) getCodes().get("parish");
         return parish;
