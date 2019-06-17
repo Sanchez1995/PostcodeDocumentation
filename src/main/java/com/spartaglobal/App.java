@@ -23,6 +23,11 @@ public class App
         System.out.println(postcodeDeserialiser.postcodesMapped.getLsoa());
         System.out.println(postcodeDeserialiser.postcodesMapped.getMsoa());
 
+        //what to do for parameters with second values?
+        System.out.println(postcodeDeserialiser.postcodesMapped.getResult().get("parish"));
+        System.out.println(postcodeDeserialiser.postcodesMapped.getResult().get("admin_ward"));
+
+
         System.out.println(postcodeDeserialiser.postcodesMapped.getAdmin_district());
         System.out.println(postcodeDeserialiser.postcodesMapped.getAdmin_county());
         System.out.println(postcodeDeserialiser.postcodesMapped.getAdmin_ward());
