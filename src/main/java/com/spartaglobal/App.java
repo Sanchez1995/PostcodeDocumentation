@@ -13,6 +13,7 @@ public class App
         System.out.println(postcodeDeserialiser.postcodesMapped.getResult().get("eastings"));
         Map listCode = (Map) postcodeDeserialiser.postcodesMapped.getResult().get("codes");
         System.out.println(listCode.get("parish"));
+        System.out.println(postcodeDeserialiser.postcodesMapped.getAdmin_county());
 
     }
 }

@@ -36,11 +36,12 @@ public class PostcodeDTO {
         return result;
     }
 
-    /*public String getAdmin_county() {
+    public String getAdmin_county() {
         Map listResult = result;
-        listResult.get("codes");
-        return ;
-    }*/
+         Map listAdmin =(Map)listResult.get("codes");
+         admin_county = (String) listAdmin.get("admin_county");
+        return admin_county;
+    }
 
     public String getAdmin_district() {
         return admin_district;
