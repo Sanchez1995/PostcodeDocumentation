@@ -1,7 +1,6 @@
 package com.spartaglobal;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.spartaglobal.dto.PostcodeDTO;
 
 import java.io.File;
 import java.io.IOException;
@@ -12,7 +11,6 @@ public class PostcodeDeserialiser {
 
     public PostcodeDeserialiser(String fileName) {
         ObjectMapper objectMapper = new ObjectMapper();
-
         try {
             postcodesMapped = objectMapper.readValue(new File(fileName), PostcodeDTO.class);
         } catch (IOException e) {
