@@ -3,8 +3,9 @@ package com.spartaglobal;
 import java.util.Map;
 
 public class PostcodeDTO {
+
+    private int status;
     private String postcode;
-    private int quality;
     private int eastings;
     private int northings;
     private String country;
@@ -23,16 +24,24 @@ public class PostcodeDTO {
     private String ced;
     private String ccg;
     private String nuts;
-    private Map<String, String> codes;
+    private Map<String, Object> result;
+    private Map<String, Integer> quality;
+    //private Map<Object, >
 
-    public Map<String, String> getCodes() {
-        return codes;
+    public int getStatus() {
+        return status;
     }
 
-    public String getAdmin_county() {
-        return admin_county;
+    public Map<String, Object> getResult() {
+        return result;
     }
-    
+
+    /*public String getAdmin_county() {
+        Map listResult = result;
+        listResult.get("codes");
+        return ;
+    }*/
+
     public String getAdmin_district() {
         return admin_district;
     }
@@ -43,6 +52,10 @@ public class PostcodeDTO {
 
     public double getLongitude() {
         return longitude;
+    }
+
+    public Map<String, Integer> getQuality() {
+        return quality;
     }
 
     public String getParliamentary_constituency() {
@@ -89,10 +102,6 @@ public class PostcodeDTO {
         return postcode;
     }
 
-    public int getQuality() {
-        return quality;
-    }
-
     public int getEastings() {
         return eastings;
     }
@@ -108,6 +117,4 @@ public class PostcodeDTO {
     public String getNhs_ha() {
         return nhs_ha;
     }
-
-
 }
