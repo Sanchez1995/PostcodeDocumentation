@@ -3,6 +3,8 @@ package com.spartaglobal;
 import java.util.Map;
 
 public class PostcodeDTO {
+    //make sure can pass in a key and get the value of the object in the main
+    //make sure values are passed into the object
 
     private int status;
     private String postcode;
@@ -53,7 +55,7 @@ public class PostcodeDTO {
         return quality;
     }
 
-    public int getEastings() {
+    public int getEastings(String east) {
         eastings = (Integer) getResult().get("eastings");
         return eastings;
     }

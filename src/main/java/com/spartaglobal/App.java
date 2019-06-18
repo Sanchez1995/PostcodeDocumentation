@@ -9,7 +9,7 @@ public class App
 
         System.out.println(postcodeDeserialiser.postcodesMapped.getPostcode());
         System.out.println(postcodeDeserialiser.postcodesMapped.getQuality());
-        System.out.println(postcodeDeserialiser.postcodesMapped.getEastings());
+        System.out.println(postcodeDeserialiser.postcodesMapped.getEastings("eastings"));
         System.out.println(postcodeDeserialiser.postcodesMapped.getNorthings());
         System.out.println(postcodeDeserialiser.postcodesMapped.getCountry());
         System.out.println(postcodeDeserialiser.postcodesMapped.getNhs_ha());
